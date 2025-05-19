@@ -7,6 +7,40 @@ public class Book {
     private String author;
     private boolean isIssue;
 
+
+    public void setBookId(int bookId){
+        this.bookId=bookId;
+    }
+    public int getBookId(){
+        return bookId;
+    }
+
+    public void setTitle(String title){
+        this.title=title;
+    }
+    public String getTitle(){
+        return title;
+    }
+
+    public void setAuthor(String author){
+        this.author=author;
+    }
+    public String getAuthor(){
+        return author;
+    }
+
+    public void setIsIssue(boolean isIssue){
+        this.isIssue=isIssue;
+    }
+    public boolean getIsIssue(){
+        return isIssue;
+    }
+
+
+
+
+
+
      Book(int bookId, String title, String author){
 
         this.bookId=bookId;
@@ -36,26 +70,26 @@ public class Book {
         System.out.println("Book Id "+bookId +"Book Title "+title +"Author "+author);
     }
 
-    public static void main(String arg[]){
+
 
     Book b=new Book(14,"Java Book"," Sir Bilal");
 
-    Scanner ob=new Scanner(System.in);
+//    Scanner ob=new Scanner(System.in);
+//
+//    System.out.println("1. Issue Book \n2. Return Book \n3. Display info \n Enter Selection :");
+//
+//    int sel=ob.nextInt();
+//
+//    if(sel==1){
+//        b.issueBook();
+//    }
+//    if(sel==2){
+//        b.returnBook();
+//    }
+//    if(sel==3){
+//        b.displayInfo();
+//    }
 
-    System.out.println("1. Issue Book \n2. Return Book \n3. Display info \n Enter Selection :");
 
-    int sel=ob.nextInt();
-
-    if(sel==1){
-        b.issueBook();
-    }
-    if(sel==2){
-        b.returnBook();
-    }
-    if(sel==3){
-        b.displayInfo();
-    }
-
-    }
 
 }
